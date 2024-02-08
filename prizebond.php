@@ -3,12 +3,11 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-$mostofaBonds = array (
-  '00XX861~00XX870',
-  '00404XX'
+$myBonds = array (
+  '00XX861~00XX870', // range input
+  '00404XX' //single input
 );
 
-$myBonds = $ruposhBonds;
 $searchResult = [];
 foreach($myBonds as $bondNumber){
   $search = search($bondNumber);
