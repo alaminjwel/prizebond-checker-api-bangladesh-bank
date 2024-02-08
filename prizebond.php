@@ -15,7 +15,7 @@ foreach($myBonds as $bondNumber){
 }
 
 echo "<pre>";
-if(empty($searchResult)) echo "<h1>Not prize found</h1>";
+if(empty($searchResult)) echo "<h1>No prize found</h1>";
 else var_export($searchResult);
 
 function search($bondNumber=''){
